@@ -20,13 +20,13 @@ Mоделот кој ќе ја прикажува мојата идеја ќе �
 1. Модел за поврзување на сензорот за вода
    
 
-<img src="file://./media/Water-sensor-analog_bb.jpg" title="" alt="Water Sensor" width="620"> [7]
+![Water Sensor](./media/Water-sensor-analog_bb.jpg) [7]
 
 2. Модел за поврзување на DHT11 сензорот за влажност и температура на
    воздухот
    
-   
-<img src="file://./media/demo2.png" title="" alt="DHT11 Sensor" width="616">  [8]
+
+![DHT11 Sensor](./media/demo2.png) [8]
 
 ## Development team
 

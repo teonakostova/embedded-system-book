@@ -12,7 +12,7 @@
 Шематски приказ на продуктот:
 
 
-<img title="" src="file:///home/teonakostova/Desktop/вмс/проект/слики/tinkercad.png" alt="Schema" width="616"> [9]
+![Schema](./media/tinkercad.png) [9]
 
 
 На оваа слика недостасува water sensor-от, кој за жал го немаше во TinkerCad.
