@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Планирање и анализа &#8212; Arduino Project</title>
+    <title>Дизајнирање &#8212; Arduino Project</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -52,7 +52,8 @@
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Дизајнирање" href="design.html" />
+    <link rel="next" title="Имплементација" href="implementation.html" />
+    <link rel="prev" title="Планирање и анализа" href="intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -83,15 +84,15 @@
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
- <li class="toctree-l1 current">
-  <a class="reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
    Планирање и анализа
   </a>
  </li>
 </ul>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="design.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Дизајнирање
   </a>
  </li>
@@ -156,7 +157,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/intro.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/design.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -176,7 +177,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fdesign.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -204,22 +205,17 @@
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
-   Потреба
+   Технички ресурси
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id3">
-   Целна група
+  <a class="reference internal nav-link" href="#proof-of-concept">
+   Proof of concept
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id4">
-   Побарувања
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id5">
-   Конкуренција
+  <a class="reference internal nav-link" href="#development-team">
+   Development team
   </a>
  </li>
 </ul>
@@ -234,34 +230,38 @@
               <div>
                 
   <div class="section" id="id1">
-<h1>Планирање и анализа<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1>Дизајнирање<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id2">
-<h2>Потреба<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Луѓето секојдневно можат да се најдат во опасни ситуации, особено лицата кои комплетно или делумно го имаат изгубено својот вид, и за жал често не можат навремено да ги избегнат токму заради нивната попреченост. Една од тие опасности е и поплава. Како последица на нивната попреченост, овие лица имаат изострени сетила за слух. Токму тоа сакам да го искористам да им помогнам да добијат предупредување за евакуација во случај на поплава. Исто така уредот може да се модифицира да им помага да извршуваат секојдневни активности како готвење, правење чај, кафе и слично. За сите останати кои можеби сакаат да ја знаат моменталната температура и влажност на воздухот овој уред нуди и такви информации прикажани на LCD екран како дополнителна карактеристика.</p>
-<p><img alt="Food Alarm" src="_images/flood-warning.png" /> [3]</p>
-</div>
-<div class="section" id="id3">
-<h2>Целна група<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>Овој продукт е наменет за сите лица (особено е корисен за лица со попреченост во видот) од било која возраст, пол или професија. Овој систем може да се користи  во домот, на работното место, во јавен превоз и јавни установи. Придобивките од овој систем би биле добивање информации кои им се од интерес на сите луѓе како и навремена евакуација од поплава и избегнување посериозни повреди па дури и смрт.</p>
-<p><img alt="All People" src="_images/depositphotos_50553049-stock-illustration-teamwork-people-7-group-of.jpg" /> [4]</p>
-</div>
-<div class="section" id="id4">
-<h2>Побарувања<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<h2>Технички ресурси<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
-<li><p>Aлармот треба да е доволно гласен да може да го слушнат сите (дури и оние кои што можеби слушаат музика на слушалки, разговараат на телефон или пак имаат некакво поблаго нарушување на слухот)</p></li>
-<li><p>Алармот треба да е доволно непријатен за да се обрне внимание на него</p></li>
-<li><p>Буквите на LCD екранот да се доволно големи за да може секој да ги види</p></li>
-<li><p>Мерењата да се извршуваат доволно често за температурата и влажноста да се секогаш прецизни</p></li>
-<li><p>Често да се проверува присуство/ниво на вода</p></li>
+<li><p>Arduino uno</p></li>
+<li><p>Water sensor - за детекција на вода и мерење на нивото на водата</p></li>
+<li><p>Buzzer - за симулација на аларм</p></li>
+<li><p>Breadboard - за поставување на елементите</p></li>
+<li><p>Jumper wires - за спојување</p></li>
+<li><p>DHT11 sensor - за мерење на влажност и температура на воздухот</p></li>
+<li><p>LCD екран - за приказ на податоците</p></li>
+<li><p>Arduino IDE</p></li>
+<li><p>код кој што ќе се извршува, напишан во Arduino IDE</p></li>
 </ol>
-<p><img alt="To-do" src="_images/to-do.jpg" /> [5]</p>
 </div>
-<div class="section" id="id5">
-<h2>Конкуренција<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<p>Моментална конкуренција на пазарот се алармите за поплава, меѓутоа она по кое се разликувам од нив се дополнителните информации за температурата и влажноста на воздухот. Уште една предност е тоа што може да се пренамени како уред кој може да им ги олесни секојдневните обврски на луѓето со попреченост во видот. Пр: доколку сакаат да си послужат шолја чај, го ставаат уредот на врвот и истураат вода се додека не го слушнат алармот (на овој начин нема да си истурат врела вода надвор од шолјата за чај). Истото важи и за готвење во лонец, здела итн. Ова е навистина повеќе од се она што е досега понудено од било кој друг производител.</p>
-<p><img alt="Competition" src="_images/market-competitions-586x236.jpg" /> [6]</p>
+<div class="section" id="proof-of-concept">
+<h2>Proof of concept<a class="headerlink" href="#proof-of-concept" title="Permalink to this headline">¶</a></h2>
+<p>Mоделот кој ќе ја прикажува мојата идеја ќе биде составен од
+комбинација на следните два модели:</p>
+<ol class="simple">
+<li><p>Модел за поврзување на сензорот за вода</p></li>
+</ol>
+<p><img src="file://./media/Water-sensor-analog_bb.jpg" title="" alt="Water Sensor" width="620"> [7]</p>
+<ol class="simple">
+<li><p>Модел за поврзување на DHT11 сензорот за влажност и температура на
+воздухот</p></li>
+</ol>
+<p><img src="file://./media/demo2.png" title="" alt="DHT11 Sensor" width="616">  [8]</p>
 </div>
-<div class="toctree-wrapper compound">
+<div class="section" id="development-team">
+<h2>Development team<a class="headerlink" href="#development-team" title="Permalink to this headline">¶</a></h2>
+<p>За оваа идеја да стане реалност ќе се погрижам јас со помош на сопствените знаења како и истражувања и видеа од слични проекти пронајдени на Интернет. Во однос на хардверските компоненти, купени се готови изработени од хардверски инженери и користен е софтвер изработен соодветно од ВС софтверски инженери.</p>
 </div>
 </div>
 
@@ -290,7 +290,8 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='right-next' id="next-link" href="design.html" title="next page">Дизајнирање</a>
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">Планирање и анализа</a>
+    <a class='right-next' id="next-link" href="implementation.html" title="next page">Имплементација</a>
 
         </div>
         
